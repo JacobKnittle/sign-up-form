@@ -78,6 +78,8 @@ h6 {
 body {
   display: flex;
   font-family: "Roboto", serif;
+  background-color: #f9fafb;
+  width: 100vw;
 }
 
 .sidebar {
@@ -130,8 +132,8 @@ header {
 }
 
 .input-background-container {
-  border: 1px solid #f8f9fa;
-  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 10px #e5e7eb;
 }
 
 h2 {
@@ -146,6 +148,7 @@ h2 {
   flex-wrap: wrap;
   column-gap: 80px;
   row-gap: 10px;
+  max-width: 750px;
 }
 
 .label-input {
@@ -186,11 +189,12 @@ input:user-invalid {
   display: block;
   margin-bottom: 20px;
   background-color: #596d48;
-  padding: 9px 45px;
+  padding: 9px 50px;
   border-radius: 7px;
   border: none;
   color: white;
   font-weight: bold;
+  box-shadow: 1px 1px 5px #596d48;
 }
 
 .have-account a {
