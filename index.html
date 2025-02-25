@@ -34,34 +34,55 @@
           <h2>Let's do this!</h2>
           <div class="input-container">
             <div class="label-input">
-              <label for="first_name">FIRST NAME</label
-              ><input type="text" id="first_name" />
+              <label for="first_name">*FIRST NAME</label
+              ><input type="text" id="first_name" name="first_name" required />
             </div>
 
             <div class="label-input">
-              <label for="last_name">LAST NAME </label
-              ><input type="text" id="last_name" />
+              <label for="last_name">*LAST NAME </label
+              ><input type="text" id="last_name" name="last_name" required />
             </div>
             <div class="label-input">
-              <label for="email">EMAIL</label><input type="text" id="email" />
+              <label for="email">*EMAIL</label
+              ><input type="text" id="email" name="email" required />
             </div>
             <div class="label-input">
-              <label for="phone_number">PHONE NUMBER </label
-              ><input type="text" id="phone_number" />
+              <label for="phone_number">*PHONE NUMBER </label
+              ><input
+                type="text"
+                id="phone_number"
+                name="phone_number"
+                required
+              />
             </div>
             <div class="label-input">
-              <label for="password">PASSWORD </label
-              ><input type="text" id="password" />
+              <label for="password">*PASSWORD </label
+              ><input
+                type="text"
+                id="password"
+                name="password"
+                required
+                minlength="6"
+                maxlength="20"
+              />
             </div>
             <div class="label-input">
-              <label for="confirm">CONFIRM PASSWORD </label
-              ><input type="text" />
+              <label for="confirm">*CONFIRM PASSWORD </label
+              ><input
+                type="text"
+                required
+                minlength="6"
+                maxlength="20"
+                name="confirm_password"
+              />
             </div>
           </div>
         </div>
         <div class="account-container">
-          <button type="submit">Create Account</button>
-          <span>Already have an account? <a href="">Log in</a></span>
+          <button type="submit" class="create-account">Create Account</button>
+          <span class="have-account"
+            >Already have an account? <a href="">Log in</a></span
+          >
         </div>
       </form>
     </div>
