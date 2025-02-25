@@ -70,13 +70,102 @@ h6 {
 
 /* --------------------------------------------------------------- */
 
-.sidebar {
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("Norse-Bold.otf");
 }
 
 body {
   display: flex;
+  font-family: "Roboto", serif;
 }
 
-form {
+.sidebar {
+  height: 100vh;
+  position: relative;
+}
+
+.background-leaves {
+  height: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 25%;
+  width: 100%;
+}
+
+.logo-text {
+  font-family: Norse-Bold;
+  font-size: 80px;
+}
+
+.odin-image {
+  height: 80px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+header {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.introduction-text {
+  margin-bottom: 20px;
+}
+
+.input-background-container {
   border: 1px solid black;
+}
+
+h2 {
+  margin-left: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  border: 1px solid red;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 10px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.account-container {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+button {
+  display: block;
+  margin-bottom: 20px;
 }

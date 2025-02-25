@@ -3,51 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign Up Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="sidebar">
-      <img src="./leaves.jpg" alt="leaves" />
-      <div class="logo">
-        <h1>ODIN</h1>
+      <img class="background-leaves" src="./leaves.jpg" alt="leaves" />
+      <div class="logo-container">
+        <img class="odin-image" src="./odin-lined.png" alt="" />
+        <h1 class="logo-text">ODIN</h1>
       </div>
     </div>
     <div class="content-container">
       <header>
-        <p>
+        <p class="introduction-text">
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started
+          this in your life to help you realize your deepest dreams. <br />Sign
+          up <em>now</em> to get started.
         </p>
-        <p>You know you want to</p>
+        <p>You <em>know</em> you want to.</p>
       </header>
       <form action="">
-        <h2>Let's do this!</h2>
+        <div class="input-background-container">
+          <h2>Let's do this!</h2>
+          <div class="input-container">
+            <div class="label-input">
+              <label for="first_name">FIRST NAME</label
+              ><input type="text" id="first_name" />
+            </div>
 
-        <label for="first_name"
-          >FIRST NAME<input type="text" id="first_name"
-        /></label>
-
-        <label for="last_name"
-          >LAST NAME <input type="text" id="last_name"
-        /></label>
-        <label for="email">EMAIL<input type="text" id="email" /></label>
-        <label for="phone_number"
-          >PHONE NUMBER <input type="text" id="phone_number"
-        /></label>
-        <label for="password"
-          >PASSWORD <input type="text" id="password"
-        /></label>
-        <label for="confirm">CONFIRM PASSWORD <input type="text" /></label>
-        <button type="submit">Create Account</button>
-        <span>Already have an account? <a href="">Log in</a></span>
+            <div class="label-input">
+              <label for="last_name">LAST NAME </label
+              ><input type="text" id="last_name" />
+            </div>
+            <div class="label-input">
+              <label for="email">EMAIL</label><input type="text" id="email" />
+            </div>
+            <div class="label-input">
+              <label for="phone_number">PHONE NUMBER </label
+              ><input type="text" id="phone_number" />
+            </div>
+            <div class="label-input">
+              <label for="password">PASSWORD </label
+              ><input type="text" id="password" />
+            </div>
+            <div class="label-input">
+              <label for="confirm">CONFIRM PASSWORD </label
+              ><input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="account-container">
+          <button type="submit">Create Account</button>
+          <span>Already have an account? <a href="">Log in</a></span>
+        </div>
       </form>
     </div>
   </body>
