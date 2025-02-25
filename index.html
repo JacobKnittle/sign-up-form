@@ -35,30 +35,43 @@
           <div class="input-container">
             <div class="label-input">
               <label for="first_name">*FIRST NAME</label
-              ><input type="text" id="first_name" name="first_name" required />
+              ><input
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+                pattern="[a-zA-Z]*"
+              />
             </div>
 
             <div class="label-input">
               <label for="last_name">*LAST NAME </label
-              ><input type="text" id="last_name" name="last_name" required />
+              ><input
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+                pattern="[a-zA-Z]*"
+              />
             </div>
             <div class="label-input">
               <label for="email">*EMAIL</label
-              ><input type="text" id="email" name="email" required />
+              ><input type="email" id="email" name="email" required />
             </div>
             <div class="label-input">
               <label for="phone_number">*PHONE NUMBER </label
               ><input
-                type="text"
+                type="tel"
                 id="phone_number"
                 name="phone_number"
                 required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               />
             </div>
             <div class="label-input">
               <label for="password">*PASSWORD </label
               ><input
-                type="text"
+                type="password"
                 id="password"
                 name="password"
                 required
@@ -69,7 +82,7 @@
             <div class="label-input">
               <label for="confirm">*CONFIRM PASSWORD </label
               ><input
-                type="text"
+                type="password"
                 required
                 minlength="6"
                 maxlength="20"
